@@ -1,0 +1,15 @@
+{
+  "name": "foundry-heroku",
+  "version": "0.7.7",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node build.js",
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "devDependencies": {
+    "node-fetch": "^2.6.1"
+  }
+}
