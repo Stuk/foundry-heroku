@@ -60,7 +60,7 @@ async function main() {
     console.log(`Downloading from ${response.download}...`)
     await exec(`wget --output-document=fvtt.zip '${response.download}'`)
     console.log(`Unzipping and removing download...`)
-    await exec("unzip fvtt.zip -d app && rm fvtt.zip")
+    await exec("unzip -u fvtt.zip -d app && rm fvtt.zip")
 };
 
 main();
