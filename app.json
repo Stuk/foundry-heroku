@@ -1,0 +1,34 @@
+{
+    "name": "Foundry VTT",
+    "description": "Run Foundry Virtual Tabletop on Heroku and save data to GitHub",
+    "keywords": [
+        "foundry",
+        "rpg",
+        "github"
+    ],
+    "repository": "https://github.com/Stuk/foundry-heroku",
+    "success_url": "/",
+    "env": {
+        "ADMIN_KEY": {
+            "description": "A password for accessing the admin settings of Foundry",
+            "required": true
+        },
+        "FOUNDRY_LICENSE": {
+            "description": "Your Foundry license code. Find on https://foundryvtt.com/ under your username > Purchased Licenses",
+            "required": true
+        },
+        "FOUNDRY_VERSION": {
+            "description": "The Foundry version to use. Find latest at https://foundryvtt.com/releases/",
+            "required": true,
+            "value": "0.7.7"
+        },
+        "GITHUB_REPO": {
+            "description": "GitHub repository name to store Foundry data in. E.g. username/foundry-data",
+            "required": true
+        },
+        "GITHUB_TOKEN": {
+            "description": "GitHub personal access token. Generate with 'repo' scope at https://github.com/settings/tokens/new",
+            "required": true
+        }
+    }
+}
