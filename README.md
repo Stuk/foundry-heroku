@@ -6,9 +6,11 @@ Run Foundry Virtual Tabletop on Heroku and save data to GitHub, all for free.
 
 1. Find your license code for Foundry at https://foundryvtt.com/, under your username > Purchased Licenses
 1. Create a new, private GitHub repo and **add a README file** at https://github.com/new.
-1. Generate a new GitHub token with the `repo` scope at https://github.com/settings/tokens.
+    * If your repo is https://github.com/username/foundry-data then `GITHUB_REPO` should be set to `username/foundry-data`.
+1. Generate a new GitHub token with the `repo` scope at https://github.com/settings/tokens/new.
 1. Click [![Deploy on Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy) and fill in the above details.
 1. Every minute the server will check for changed data files (including modules, systems and worlds) and push them to your GitHub repo.
+1. Enjoy your server!
 
 ## Caveats
 
