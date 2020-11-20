@@ -14,7 +14,7 @@ Run Foundry Virtual Tabletop on Heroku and save data to GitHub, all for free.
 
 ## Caveats
 
-* Invitiation links from in-game settings are incorrect.
+* Invitation links from in-game settings are incorrect.
     - Instead just send your players a link to your Heroku URL.
 * Heroku shuts down the server after 30 minutes with no activity.
     - As part of the free plan Heroku [servers sleep after 30 minutes of no activity](https://devcenter.heroku.com/articles/free-dyno-hours#dyno-sleeping).
