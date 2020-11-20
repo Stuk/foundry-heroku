@@ -2,10 +2,10 @@ const fs = require("fs");
 const util = require('util');
 const exec = util.promisify(require('child_process').exec);
 
-const TOKEN = process.env.GITHUB_TOKEN;
-const REPO = process.env.GITHUB_REPO;
-const ADMIN_KEY = process.env.ADMIN_KEY;
-const FOUNDRY_LICENSE = process.env.FOUNDRY_LICENSE.replace(/-/g, "");
+const TOKEN = process.env.GITHUB_TOKEN.trim();
+const REPO = process.env.GITHUB_REPO.trim();
+const ADMIN_KEY = process.env.ADMIN_KEY.trim();
+const FOUNDRY_LICENSE = process.env.FOUNDRY_LICENSE.trim().replace(/-/g, "");
 
 const DATA_PATH = "/tmp/foundry-data"
 const SAVE_DATA_TIME = 60000;

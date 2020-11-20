@@ -2,8 +2,8 @@ const util = require('util');
 const exec = util.promisify(require('child_process').exec);
 const fetch = require("node-fetch");
 
-const FOUNDRY_LICENSE = process.env.FOUNDRY_LICENSE.replace(/-/g, "");
-const FOUNDRY_VERSION = process.env.FOUNDRY_VERSION;
+const FOUNDRY_LICENSE = process.env.FOUNDRY_LICENSE.trim().replace(/-/g, "");
+const FOUNDRY_VERSION = process.env.FOUNDRY_VERSION.trim();
 
 const EULA_VERSION = "none";
 const API_KEY = "foundryvtt_hkmg5t4zxc092e31mkfbg3";
