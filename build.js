@@ -5,7 +5,7 @@ const fetch = require("node-fetch");
 const FOUNDRY_LICENSE = process.env.FOUNDRY_LICENSE.trim().replace(/-/g, "");
 const FOUNDRY_VERSION = process.env.FOUNDRY_VERSION.trim();
 
-const EULA_VERSION = "none";
+const EULA_VERSION = "0.8.0";
 const API_KEY = "foundryvtt_hkmg5t4zxc092e31mkfbg3";
 
 async function signLicense(key) {
@@ -64,4 +64,3 @@ async function main() {
 };
 
 main();
-
