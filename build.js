@@ -39,6 +39,8 @@ async function signLicense(key) {
 async function main() {
     const license = await signLicense(FOUNDRY_LICENSE);
 
+    const [generation, build] = FOUNDRY_LICENSE.split(".");
+
     console.log("Getting download URL...");
     request = await fetch("https://foundryvtt.com/_api/license/download/", {
         headers: {
@@ -47,7 +49,8 @@ async function main() {
         },
         method: "POST",
         body: JSON.stringify({
-            version: FOUNDRY_VERSION,
+            generation: generation,
+            build: build,
             license: license
         })
     });
